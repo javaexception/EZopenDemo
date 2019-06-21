@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/realplay_control_rl"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:background="#222222"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:layout_below="@+id/realplay_sv"
+    android:orientation="horizontal" >
+
+    <!-- 播放按钮 -->
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_play"
+        android:button="@null"
+        android:background="@drawable/ic_play_play_selector1"
+        android:layout_width="22dp"
+        android:checked="false"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="22dp" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/tv_voice"
+        android:button="@null"
+        android:background="@drawable/ic_viedeo_sound1"
+        android:layout_width="22dp"
+        android:checked="false"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="22dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/realplay_quality_btn"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_video_txt_bg"
+        android:text="高清"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_screenshot"
+        android:background="@mipmap/ic_video_camrea"
+        android:layout_width="22dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="22dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+    <CheckBox
+
+        android:id="@+id/check_video"
+        android:button="@null"
+        android:background="@drawable/drawable_video_video_check"
+        android:layout_width="22dp"
+        android:checked="false"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="22dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <com.videogo.widget.CheckTextButton
+            android:id="@+id/fullscreen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/ic_video_change" />
+    </LinearLayout>
+</LinearLayout>

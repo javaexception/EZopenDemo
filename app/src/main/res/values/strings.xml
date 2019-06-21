@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EZopenDemo</string>
+
+    <string name="quality_hd">高清</string>
+    <string name="quality_balanced">均衡</string>
+    <string name="quality_flunet">流畅</string>
+</resources>
